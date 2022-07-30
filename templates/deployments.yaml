@@ -18,6 +18,6 @@ spec:
     spec:
       containers:
       - name: nginx-for-svc
-        image: nginx
+        image: kingdom0220/nodejs:latest
         ports:
-        - containerPort: 80
+        - containerPort: 8000
