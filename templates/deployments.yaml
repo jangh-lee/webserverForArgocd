@@ -6,7 +6,7 @@ metadata:
     app: nginx-for-svc
 
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: nginx-for-svc
