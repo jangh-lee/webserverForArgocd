@@ -15,8 +15,8 @@ spec:
     spec:
       containers:
       - name: rollouts-demo
-        #image: argoproj/rollouts-demo:blue
-        image: nginx
+        image: argoproj/rollouts-demo:blue
+        #image: nginx
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
@@ -42,7 +42,7 @@ spec:
   ports:
   - protocol: TCP
     port: 80
-    targetPort: 80
+    targetPort: 8080
 
 ---
 kind: Service
