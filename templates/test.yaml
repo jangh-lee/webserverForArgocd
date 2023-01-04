@@ -15,8 +15,8 @@ spec:
     spec:
       containers:
       - name: rollouts-demo
-        image: argoproj/rollouts-demo:blue
-        #image: argoproj/rollouts-demo:green
+        #image: argoproj/rollouts-demo:blue
+        image: argoproj/rollouts-demo:green
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
@@ -29,7 +29,7 @@ spec:
       previewService: rollout-bluegreen-preview
       
       #autoPromotioEnabled 옵션은 Blue/Green 배포를 자동으로 진행할 것인지 여부. false 옵션을 사용해 수동으로 지정
-      autoPromotionEnabled: true
+      autoPromotionEnabled: false
 
 ---
 kind: Service
